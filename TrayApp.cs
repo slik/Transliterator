@@ -104,7 +104,7 @@ public sealed class TrayApp : ApplicationContext
     private static (Icon icon, IntPtr hIcon) BuildIcon(Color textColor)
     {
         const int size = 64;
-        const float margin = 3f;
+        const float margin = 0f;
         using var bmp = new Bitmap(size, size);
         using (var g = Graphics.FromImage(bmp)) {
             g.SmoothingMode = SmoothingMode.AntiAlias;
